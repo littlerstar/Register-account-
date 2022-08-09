@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>NMU</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img src="img/Algorithms for Dummies (John Paul Mueller, Luca Massaron) (z-lib.org).jpeg">
+    <h1>National Meanchey University</h1>
+    <p>Create your account to join NMU's community</p>
+    <form>
+      <fieldset>
+        <label>Enter Your First Name: <input type="text" name="first-name" required /></label>
+        <label>Enter Your Last Name: <input type="text" name="last-name" required /></label>
+        <label>Enter Your Email: <input type="email" name="email" required /></label>
+        <label>Create a New Password: <input type="password" name="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <label><input type="radio" name="account-type" class="inline" />Staff</label>
+        <label><input type="radio" name="account-type" class="inline" />Student</label>
+        <label>
+          <input type="checkbox" name="terms" class="inline" required /> I accept the <a href="#">terms and conditions</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Upload a profile picture: <input type="file" name="file" /></label>
+        <label>Input your age (years): <input type="number" name="age" min="13" max="120" />
+        </label>
+        <label>Which facualty are you?
+          <select name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Faculty of Agriculture and Food Processing</option>
+            <option value="2">Faculty of Arts, Humanities, and Language</option>
+            <option value="3">Faculty of Science and Technology</option>
+            <option value="4">Faculty of Sociology and Community Development</option>
+            <option value="5">Faculty of Business Management and Tourism</option>
+          </select>
+        </label>
+        <label>About You:
+          <textarea name="bio" rows="3" cols="30" placeholder="My name is..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Create account" />
+    </form>
+  </body>
+</html>
